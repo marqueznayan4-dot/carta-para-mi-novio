@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi cielito preciosoo 🤍</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+
+<body>
+    <main class="contenedor">
+
+        <div class="flores">🌷 🤍 🌷</div>
+
+        <div class="sobre">💌</div>
+
+        <h1>Para mi cielito preciosoo</h1>
+
+        <p>Hice algo muy especial para ti...</p>
+
+        <div class="corazones">🤍 ♡ 🤍 ♡ 🤍</div>
+
+        <button id="boton">Abrir mi cartita 💗</button>
+
+        <section id="mensaje" hidden>
+            <h2>Hola vida mia, adivina...</h2>
+
+            <p>
+                Contigo he descubierto una tranquilidad que no sabia
+                que necesitaba. Me haces sentir segura, comoda y feliz,
+                no porque todo sea perfecto, sino porque cuando estoy
+                contigo siento que puedo ser yo misma, sin mascaras,
+                sin miedos y sin pretender ser alguien diferente.
+            </p>
+
+            <p>
+                Te amo con todo mi corazon, con todo lo que soy y hasta
+                en esos pequeños rincones de mi que solo tu has sabido
+                iluminar.
+            </p>
+
+            <p class="firma">Con todo mi amor, para ti 🤍</p>
+
+            <div class="corazones">♡ 🤍 ♡</div>
+        </section>
+
+        <p class="final">Hecho con amor, especialmente para ti 🌷</p>
+
+    </main>
+
+    <script>
+        const boton = document.getElementById("boton");
+        const mensaje = document.getElementById("mensaje");
+
+        boton.addEventListener("click", function () {
+            mensaje.hidden = !mensaje.hidden;
+
+            if (mensaje.hidden) {
+                boton.textContent = "Abrir mi cartita 💗";
+            } else {
+                boton.textContent = "Cerrar mi cartita 🤍";
+            }
+        });
+    </script>
+</body>
+</html>
